@@ -100,13 +100,11 @@ padding-bottom: 90px;
    margin: 0;
   }
   footer {
-   background-color: #333;
-   color: #fff;
-   flex: 0 0 auto;
-   position: absolute;
-   padding: 20px;
-   text-align: center;
-   width: 100%;
-   left: 0;
-   bottom: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
