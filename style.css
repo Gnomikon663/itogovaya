@@ -54,6 +54,7 @@ body {
    padding: 10px;
    float: right;
   position: fixed;
+  overflow: row;
       margin-left: 60%;
       height: 100%;
       width: 100%;
@@ -84,9 +85,6 @@ margin: 0px;
 float: left;
 background-color: #63e627;
 width:  60%;
-flex: 1 0 auto;
-display: flex;
-  flex-direction: column;
 padding-bottom: 90px;
   }
   section {
@@ -107,4 +105,26 @@ padding-bottom: 90px;
     position: fixed;
     bottom: 0;
     width: 100%;
+  }
+  @media (max-width: 767px) {
+    nav {
+      overflow:auto;
+    }
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  
+    nav ul li a {
+      padding: 5px;
+    }
+  }
+  @media (min-width: 768px) {
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      padding: 5px 10px;
+    }
   }
